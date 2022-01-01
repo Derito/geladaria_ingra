@@ -18,14 +18,14 @@ public class ConfigSwagger {
 	public Docket documentacao() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.hcostaide.geladaria_ingra.endpoint.v1"))
+				.apis(RequestHandlerSelectors.basePackage("com.hcostaide.geladariaingra.controller.v1"))
 				.build()
 				.apiInfo(metaDados());
 	}
 	private ApiInfo metaDados() {
 		return new ApiInfoBuilder()
-				.title("Gerador de Exames por HCostaIDE")
-				.description("IDE de Geração de Exames na base de perguntas.")
+				.title("Geladaria da Ingra por HCostaIDE")
+				.description("IDE de Geração de geladaria.")
 				.version("1.0")
 				.contact(new Contact("Hélder Costa","helderdacsta@hotmail.com","www.hcostaide.com"))
 				.license("Apache License Version 2.0")
