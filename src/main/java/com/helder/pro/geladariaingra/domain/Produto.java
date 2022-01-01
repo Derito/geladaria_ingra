@@ -1,6 +1,8 @@
 package com.helder.pro.geladariaingra.domain;
 
+import javax.persistence.Entity;
 
+@Entity
 public class Produto extends AbstractEntity{
 	
 	private static final long serialVersionUID = 1L;
